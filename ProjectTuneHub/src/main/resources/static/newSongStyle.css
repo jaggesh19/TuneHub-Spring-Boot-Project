@@ -1,0 +1,105 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: #1a1a1a;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.brand {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.nav-links li a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #333333;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+.content h1{
+	text-align: center;
+	color: green;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border:1px solid gray;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Set width to cover 70% of the container */
+    max-width: 900px; /* Set maximum width for the form */
+    min-height:500px;
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+label {
+	font-size:22px;
+    display: block;
+    color: green;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+input[type="text"]{
+    width: calc(100% - 22px); /* Adjusted width to fit within the form */
+    height:30px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+input[type="submit"] {
+	max-width:100%;
+	min-height:30px;	
+	margin:15px;
+	margin-left:330px;
+	padding:10px 100px;
+	border-radius:20px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size:20px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}

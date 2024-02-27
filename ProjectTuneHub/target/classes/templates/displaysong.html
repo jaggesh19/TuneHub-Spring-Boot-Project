@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Songs</title>
+<link rel="stylesheet" type="text/css" href="displayStyles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand">Admin Dashboard</div>
+        <ul class="nav-links">
+           <li><a href="adminhome">Home</a></li>
+            <li><a href="newsong">Add Song</a></li>
+            <li><a href="viewsongs">View Songs</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Song Table</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Artist</th>
+                    <th>Genre</th>
+                    <th>Play</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="s:${songs}">
+                  <td th:text="${s.name}"></td>
+                  <td th:text="${s.artist}"></td>
+                  <td th:text="${s.genre}"></td>
+                  <td>
+                      <audio controls controlsList="nodownload">
+                      	<source th:src="${s.link}">
+                      </audio>                    
+                 </td>
+              	</tr>
+                <!-- More rows for other songs -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
